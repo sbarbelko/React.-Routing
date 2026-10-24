@@ -5,7 +5,6 @@ import Home from "./Components/Home";
 import Components from "./Components/Components";
 import NotFound from "./Components/NotFound";
 import Header from "./Components/Header";
-// import styles from "./App.sass";
 
 function App() {
   return (

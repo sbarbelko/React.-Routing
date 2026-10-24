@@ -4,6 +4,7 @@ import { useRouteMatch } from "react-router-dom";
 import Greeting from "../Greeting";
 import Goodbye from "../Goodbye";
 import styles from "./Components.module.sass";
+import NotFound from "../NotFound";
 
 function Components() {
   const { path, url } = useRouteMatch();
@@ -28,6 +29,9 @@ function Components() {
         </Route>
         <Route path={`${path}/goodbye`}>
           <Goodbye />
+        </Route>
+        <Route path="*">
+          <NotFound />
         </Route>
       </Switch>
     </div>

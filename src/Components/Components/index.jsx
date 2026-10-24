@@ -30,9 +30,6 @@ function Components() {
         <Route path={`${path}/goodbye`}>
           <Goodbye />
         </Route>
-        <Route path="*">
-          <NotFound />
-        </Route>
       </Switch>
     </div>
   );

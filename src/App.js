@@ -1,33 +1,16 @@
-import {
-  Link,
-  NavLink,
-  Route,
-  BrowserRouter as Router,
-  Switch,
-} from "react-router-dom";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./App.css";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import Components from "./Components/Components";
 import NotFound from "./Components/NotFound";
+import Header from "./Components/Header";
 // import styles from "./App.sass";
 
 function App() {
   return (
     <Router>
-      <nav>
-        <ul>
-          <li>
-            <NavLink to="/">Home</NavLink>
-          </li>
-          <li>
-            <NavLink to="/components">Components</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
-        </ul>
-      </nav>
+      <Header />
       <Switch>
         <Route exact path="/">
           <Home />
